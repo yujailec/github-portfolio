@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>All About You</title>
+    <link href="<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="tell_me_more.css"
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="tell_me_more.html">All About You</a></li>
+      </ul>
+    </nav>
+      <h1>All About You!</h1>
+    <form>
+    <div>
+      <label for="firstname">First Name</label>
+      <input
+        type="text"
+        name="yourfirstname"
+        autocomplete="off"
+      >
+      <label for="lastname">Last Name</label>
+      <input
+        type="text"
+        name="yourlastname"
+        autocomplete="off"
+      >
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="bday"><br>
+
+      <label for="Email">Email</label>
+      <input
+        type="text"
+        name="youremail"
+        autocomplete="off"
+      </div><br>
+
+      <div>
+        <label for ="Name">How much do you like to code? </label> <input type="range">
+      </div><br>
+
+      <div>
+        <label for "Skills">Skills (Check any that apply) </label>
+        <input type="checkbox">HTML<input type="checkbox">CSS <input type="checkbox">Python
+      </div><br>
+
+      <div>
+        <label for="FavLang">Favorite Language</label>
+        <action="/action_page.php">
+        <input list="languages">
+        <datalist id="languages">
+        <option value="Ruby">
+        <option value="JavaScript">
+        <option value="Python">
+        </datalist>
+      </div><br>
+
+      <div>
+        <label for="FavBrowser">Favorite Browser</label>
+        <action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Safari">
+        </datalist>
+      </div><br>
+
+      <div>
+        <label for="WhiteSpace">White Space:</label>
+        <input type="checkbox" name="whitespace1" value="Tab"> Tab
+        <input type="checkbox" name="whitespace2" value="Spaces"> Spaces
+      </div><br>
+
+      <div>
+        <label for "name">How many spaces should a tab represent?</label>
+        <input type="number" name="quantity" min="1" max="5">
+      </div><br>
+
+      <div>
+        <label for="webcolor">Favorite Web Color:</label>
+        <input type="color">
+
+      </div><br>
+
+      <button type="submit">Send</button>
+      <input type="reset"></input>
+
+</form>
+</body>
+</html>
